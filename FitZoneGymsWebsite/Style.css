@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	background-color: #100C50;
+    padding: 60px 0;
+    margin-top: -120px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+	
+
+
+nav .logo{
+	width: 220px;
+    margin-left: 20px;
+    margin-top: -120px;
+}
+
+nav ul{
+	float: right;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding:0px 20px;
+}
+
+nav ul li a:hover{
+	color: #c0d96f;
+}
+
+nav ul li .active{
+	color: #c0d96f;
+}
+
+.image img{
+	width:100%;
+	height: 700px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -30%);
+  color: #F9FFDB;
+  text-decoration: none;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.intro{
+	 font-family: 'Poppins', sans-serif;
+	 text-align: center;
+}
+
+/*following styles will be common for table in the fitness packages as well*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: center;
+  padding: 3px;
+}
+/*following tr:nth-child(even) is used to select all table rows (denoted by the <tr> tag in HTML), and the :nth-child(even) pseudo-class selects every table row with an even ID number. For each even-numbered table row, the background color of the table row is set to dim gray.*/
+tr:nth-child(even) {
+  background-color: #716E6E;
+}
+
+
+.services{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.s-heading{
+	text-align:center;
+	margin: -200px;
+	padding: -100px;
+}
+.s-heading h1{
+	color:#070000;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.s-heading p{
+	color: rgba(217,221,31,1.00);
+	font-size: 1rem;
+	margin: 5px;
+	text-align: center;
+}
+.s-box-container{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-box{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width:300px;
+	padding: 20px 25px;
+	height: 400px;
+	box-sizing: border-box;
+	margin: 30px;
+	position: relative;
+		background-color: rgba(51,51,51,1.00)
+}
+.s-box p{
+	color: rgba(10,0,0,1.00);
+	text-align: center;
+}
+.s-box:hover{
+	box-shadow: 2px 2px 30px rgba(10,0,0,1.00);
+	transition: all ease 0.3s;
+}
+.s-box:hover .bar{
+	display: block;
+}
+
+
+
+
+.glry {
+  color: #0E1032;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ImageContainer {
+  display: grid;
+  grid-template-columns: 400px 700px 10px;
+  padding: 20px;
+}
+
+.images {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  border: 5px solid #ccc; 
+  margin-bottom: 20px;
+}
+div.images:hover {
+  border: 5px solid #777;
+}
+
+
+
+.contact{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0px;
+	background-color: #BCB8B8;
+}
+
+.contact-heading{
+	text-align: center;
+	margin: 40px 0px;
+	margin-bottom: 80px;
+}
+
+.contact-heading h1{
+	font-size: 2.2rem;
+}
+
+.contact form{
+	width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.contact form input,.contact form textarea{
+	width: 100%;
+	height: 40px;
+	margin-top: 6px;
+	padding: 12px;
+	background-color: #4E4E4A;
+	color: #F4E6E6;
+	border-radius: 4px;
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.contact form textarea{
+	height: 200px;
+}
+
+.contact-btn{
+	width: 115px;
+	height: 55px;
+	text-align: center;
+	justify-content: center;
+    background-color: #100C50;
+	border-radius: 15px;
+	color: #020000;
+	margin-top: 70px;
+	box-shadow: 0px 0px 10px rgb(0%, 0%, 0%);
+}
+
+
+
+.searchbar{
+text-align:center;
+width: 100%;
+}
+.searchbar input,.searchbar text {
+  height: 25px;
+  width: 1000px;
+}
+.searchbtn {
+  margin-left: 700px;
+  margin-right: 10px;
+}
+.tbl{
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  width: 1020px;
+}
+th {
+  height: 55px;
+}
+td {
+	width: 500px;
+	height: 30px;
+}
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+
+
+
+
+
+.fuck{
+	width: 100%;
+	height: 170px;
+	object-fit: contain;
+}
+h3{
+    text-align: center;
+	white-space: nowrap;
+}
+h5{
+    text-align: center;
+}
+h6{
+	text-align: center;
+}		
+.grid-container {
+  display: grid;
+  grid-template-columns: 500px 700px 10px;
+  padding: 15px;
+  justify-content: center;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  text-align: center;
+}
+
+
+
+
+.register{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0px;
+	background-color: #BCB8B8;
+}
+
+.register-heading{
+	text-align: center;
+	margin: 40px 0px;
+	margin-bottom: 80px;
+}
+
+.register-heading h1{
+	font-size: 2.2rem;
+}
+
+.register form{
+	width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.register form input[type=text],input[type=password]{
+	width: 100%;
+	height: 40px;
+	margin-top: 6px;
+	padding: 12px;
+	background-color: #4E4E4A;
+	color: #F4E6E6;
+	border-radius: 4px;
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.contact-btn{
+	width: 115px;
+	height: 55px;
+	text-align: center;
+	justify-content: center;
+	background-color: #282A5;
+	border-radius: 15px;
+	color: #020000;
+	margin-top: 70px;
+	box-shadow: 0px 0px 10px rgb(0%, 0%, 0%);
+}
+
+
